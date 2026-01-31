@@ -1,6 +1,6 @@
 /* CSS Variables */
 :root {
-  --primary-color: #8398a5;
+  --primary-color: #1c4f6c;
   --secondary-color: #62b6cb;
   --accent1-color: #5fa8d3;
   --accent2-color: #cae9ff;
@@ -10,10 +10,26 @@
 }
 
 header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  align-items: center;  
+  background-color: var(--primary-color);
 }
 /* CSS Reset */
+header img {
+  width: 150px;
+}
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+}
+
+header nav a{
+  text-decoration: none;
+  color: var(--accent2-color);
+  font-weight: bold;
+}
 * {
   margin: 0;
   padding: 0;
@@ -95,4 +111,48 @@ nav, p, section, article {
 .socialmedia img {
   width: 32px;
   margin-right: 8px;
+}
+
+.history h2 {
+  text-align: center;
+}
+.history-content {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 16px;
+  align-items: center;
+}
+.history-content img {
+  width: 200px;
+}
+.adventures h2 {
+  text-align: center;
+}
+.adventure-gallery {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.adventure-gallery figure {
+  text-align: center;
+}
+.adventure-gallery img {
+  width: 200px;
+}
+footer {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 16px;
+  color: white;
+}
+.socialmedia {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+.socialmedia img {
+  width: 32px;
 }
